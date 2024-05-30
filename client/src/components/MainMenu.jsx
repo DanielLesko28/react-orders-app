@@ -4,7 +4,7 @@ import Bookmark from "./Bookmark";
 
 const MainMenu = () => {
   return (
-    <div className="h-screen bg-white text-white w-64 flex-shrink-0">
+    <div className=" bg-white text-white w-64 flex-shrink-0">
       <nav className="p-4">
         <ul>
           {menuData.map((item) => (
