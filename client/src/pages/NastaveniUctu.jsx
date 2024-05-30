@@ -1,7 +1,7 @@
 import React from "react";
 
 const NastaveniUctu = () => {
-  return <div>NastaveniUctu</div>;
+  return <div className="">NastaveniUctu</div>;
 };
 
 export default NastaveniUctu;
