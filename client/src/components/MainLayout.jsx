@@ -13,17 +13,17 @@ const MainLayout = () => {
   console.log("location", location.pathname);
 
   return (
-    <div className="flex flex-col pl-10 pt-4 bg-zinc-100 h-screen">
+    <div className="flex flex-col p-4 sm:pl-10 sm:pt-4 bg-zinc-100 min-h-screen">
       <div>
-        <h1 className="text-black text-4xl pb-10">
+        <h1 className="text-black text-2xl sm:text-4xl pb-6 sm:pb-10">
           {currentMenuItem ? currentMenuItem.name : ""}
         </h1>
       </div>
-      <div className="flex w-full">
-        <div className="w-1/5">
+      <div className="flex flex-col sm:flex-row w-full">
+        <div className="w-full sm:w-1/5 mb-4 sm:mb-0">
           <MainMenu />
         </div>
-        <div className="w-4/5 mr-4">
+        <div className="w-full sm:w-4/5 sm:ml-4">
           <Outlet />
         </div>
       </div>
