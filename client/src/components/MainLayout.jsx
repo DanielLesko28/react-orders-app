@@ -8,11 +8,11 @@ const MainLayout = () => {
       <div>
         <h1 className="text-black text-4xl pb-10">Moje objednávky</h1>
       </div>
-      <div className="flex w-full border-2">
+      <div className="flex w-full">
         <div className="w-1/5">
           <MainMenu />
         </div>
-        <div className="w-4/5">
+        <div className="w-4/5 mr-4">
           <Outlet />
         </div>
       </div>
