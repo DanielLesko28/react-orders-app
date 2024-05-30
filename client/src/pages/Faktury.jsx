@@ -1,8 +1,9 @@
-import React from "react";
+import { invoiceData } from "../data/data";
+import { IoDownloadOutline } from "react-icons/io5";
 
 const Faktury = () => {
   return (
-    <div className="w-full border-2">
+    <div className="w-full bg-white">
       <table className="w-full border-collapse">
         <thead>
           <tr className="border-b-2 border-gray-200">
@@ -21,38 +22,18 @@ const Faktury = () => {
           </tr>
         </thead>
         <tbody>
-          <tr className="border-b border-gray-200">
-            <td className="text-center">3,000</td>
-            <td className="text-center">12345</td>
-            <td className="text-center">1500</td>
-            <td className="text-center">
-              <a className="text-center">Download</a>
-            </td>
-          </tr>
-          <tr className="border-b border-gray-200">
-            <td className="text-center">3,000</td>
-            <td className="text-center">12345</td>
-            <td className="text-center">1500</td>
-            <td className="text-center">
-              <a className="text-center">Download</a>
-            </td>
-          </tr>
-          <tr className="border-b border-gray-200">
-            <td className="text-center">3,000</td>
-            <td className="text-center">12345</td>
-            <td className="text-center">1500</td>
-            <td className="text-center">
-              <a className="text-center">Download</a>
-            </td>
-          </tr>
-          <tr className="border-b border-gray-200">
-            <td className="text-center">3,000</td>
-            <td className="text-center">12345</td>
-            <td className="text-center">1500</td>
-            <td className="text-center">
-              <a className="text-center">Download</a>
-            </td>
-          </tr>
+          {invoiceData.map((item) => (
+            <tr key={item.id}>
+              <td className="text-center py-4">{item.invoiceNumber}</td>
+              <td className="text-center py-4">{item.orderNumber}</td>
+              <td className="text-center py-4">-{item.price} Kč</td>
+              <td className="text-center py-4">
+                <div className="flex items-center justify-center text-blue-500">
+                  <IoDownloadOutline className="mr-2" /> Stáhnout
+                </div>
+              </td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>

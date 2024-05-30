@@ -44,3 +44,60 @@ export const orderData = [
     isPaid: true,
   },
 ];
+
+export const invoiceData = [
+  {
+    id: 1,
+    invoiceNumber: 121548784515487,
+    orderNumber: 121548784515487,
+    price: 1500,
+  },
+  {
+    id: 2,
+    invoiceNumber: 121548784515487,
+    orderNumber: 121548784515487,
+    price: 1500,
+  },
+  {
+    id: 3,
+    invoiceNumber: 121548784515487,
+    orderNumber: 121548784515487,
+    price: 1500,
+  },
+  {
+    id: 4,
+    invoiceNumber: 121548784515487,
+    orderNumber: 121548784515487,
+    price: 1500,
+  },
+  {
+    id: 5,
+    invoiceNumber: 121548784515487,
+    orderNumber: 121548784515487,
+    price: 1500,
+  },
+  {
+    id: 6,
+    invoiceNumber: 121548784515487,
+    orderNumber: 121548784515487,
+    price: 1500,
+  },
+  {
+    id: 7,
+    invoiceNumber: 121548784515487,
+    orderNumber: 121548784515487,
+    price: 1500,
+  },
+  {
+    id: 8,
+    invoiceNumber: 121548784515487,
+    orderNumber: 121548784515487,
+    price: 1500,
+  },
+  {
+    id: 9,
+    invoiceNumber: 121548784515487,
+    orderNumber: 121548784515487,
+    price: 1500,
+  },
+];
