@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
+import { FaChevronRight } from "react-icons/fa";
 
 const Bookmark = ({ name, icon, link }) => {
   const location = useLocation();
@@ -13,11 +14,15 @@ const Bookmark = ({ name, icon, link }) => {
     >
       <Link
         to={link}
-        className={`block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-600 hover:text-white ${
+        className={`block flex justify-between items-center py-2.5 pl-2 pr-4 rounded transition duration-200 hover:bg-blue-600 hover:text-white ${
           isActive ? "text-white" : "text-black"
         }`}
       >
-        {name}
+        <div className="flex items-center">
+          <div className="pr-1">{icon}</div>
+          {name}
+        </div>
+        <FaChevronRight />
       </Link>
     </li>
   );

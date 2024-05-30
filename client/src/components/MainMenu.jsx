@@ -9,7 +9,7 @@ const MainMenu = () => {
         <ul>
           {menuData.map((item) => (
             <div key={item.id}>
-              <Bookmark name={item.name} link={item.link} />
+              <Bookmark name={item.name} link={item.link} icon={item.icon} />
             </div>
           ))}
         </ul>

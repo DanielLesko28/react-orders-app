@@ -4,7 +4,7 @@ import MainMenu from "../components/MainMenu";
 
 const MyOrders = () => {
   return (
-    <div className="flex">
+    <div className="border-2">
       <h1>Hello</h1>
     </div>
   );
