@@ -11,7 +11,6 @@ import NastaveniUctu from "./pages/NastaveniUctu";
 function App() {
   return (
     <>
-      <h1 className="text-black text-4xl">Moje objednávky</h1>
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<MyOrders />} />

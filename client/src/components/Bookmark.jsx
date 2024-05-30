@@ -7,8 +7,8 @@ const Bookmark = ({ name, icon, link }) => {
 
   return (
     <li
-      className={`mb-4 border-2 bg-zinc-300 text-black ${
-        isActive ? "bg-blue-600" : "bg-zinc-300"
+      className={`mb-4 border-2  text-black ${
+        isActive ? "bg-blue-600" : "bg-zinc-200"
       }`}
     >
       <Link
