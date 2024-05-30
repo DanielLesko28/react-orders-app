@@ -1,11 +1,14 @@
-import React from "react";
-import { Outlet } from "react-router";
-import MainMenu from "../components/MainMenu";
+import { orderData } from "../data/data";
+import OrderCard from "../components/OrderCard";
 
 const MyOrders = () => {
   return (
     <div className="border-2">
-      <h1>Hello</h1>
+      {orderData.map((item) => (
+        <div key={item.id}>
+          <OrderCard data={item} />
+        </div>
+      ))}
     </div>
   );
 };

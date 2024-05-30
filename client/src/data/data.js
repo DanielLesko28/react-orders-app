@@ -20,3 +20,27 @@ export const menuData = [
     icon: <LuSettings />,
   },
 ];
+
+export const orderData = [
+  {
+    id: 1,
+    orderNumber: 2200245834,
+    orderDate: "6. 12. 2022",
+    price: 1500,
+    isPaid: true,
+  },
+  {
+    id: 2,
+    orderNumber: 2200245834,
+    orderDate: "6. 12. 2022",
+    price: 1500,
+    isPaid: true,
+  },
+  {
+    id: 3,
+    orderNumber: 2200245834,
+    orderDate: "6. 12. 2022",
+    price: 1500,
+    isPaid: true,
+  },
+];
