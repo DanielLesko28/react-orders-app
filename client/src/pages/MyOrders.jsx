@@ -3,7 +3,7 @@ import OrderCard from "../components/OrderCard";
 
 const MyOrders = () => {
   return (
-    <div className="border-2">
+    <div>
       {orderData.map((item) => (
         <div key={item.id}>
           <OrderCard data={item} />
