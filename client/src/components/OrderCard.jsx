@@ -13,11 +13,16 @@ const OrderCard = ({ data }) => {
       </div>
       <div className="px-4">
         <div className="flex justify-between">
-          <h5>Dátum objednávky: {data.orderDate}</h5>
+          <h5>
+            Dátum objednávky:{" "}
+            <span className="text-gray-400">{data.orderDate}</span>
+          </h5>
           <p className="text-blue-500">Potřebujete poradit?</p>
         </div>
         <div className="flex justify-between mb-4">
-          <h5>Cena celkem: {data.price} Kč</h5>
+          <h5>
+            Cena celkem: <span className="text-gray-400">{data.price} Kč</span>
+          </h5>
           <p>314 004 540 (po-pá 8:00-16:00)</p>
         </div>
       </div>
