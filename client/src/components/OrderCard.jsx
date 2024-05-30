@@ -2,7 +2,7 @@ import { RiArrowGoBackLine } from "react-icons/ri";
 
 const OrderCard = ({ data }) => {
   return (
-    <div className="bg-white my-4">
+    <div className="bg-white mb-4">
       <div className="flex justify-between mb-4">
         <h2>Číslo objednávky: {data.orderNumber} </h2>
         <h4
