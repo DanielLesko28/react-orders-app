@@ -104,6 +104,6 @@ export const invoiceData = [
 
 export const userData = {
   id: 1,
-  name: "",
-  email: "",
+  name: "Daniil Filatov",
+  email: "daniil.filatov@newlogic.cz",
 };
