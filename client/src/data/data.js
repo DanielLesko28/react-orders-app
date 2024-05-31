@@ -101,3 +101,9 @@ export const invoiceData = [
     price: 1500,
   },
 ];
+
+export const userData = {
+  id: 1,
+  name: "",
+  email: "",
+};
